@@ -1,0 +1,153 @@
+@import url("reset.css");
+/* 글꼴 */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #eee;
+}
+
+/* 공통영역 */
+.inner {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+  background-color: rgb(156, 255, 178);
+}
+/* 그리드레이아웃이랑 똑같당 */
+
+/* 전체레이아웃 */
+.wrap {
+  width: 100%;
+}
+
+/* 상단 */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+header .inner {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 상단 폰트 */
+header h1 {
+  /* font-family: "Overpass", sans-serif; */
+  font-family: "Agbalumo", system-ui;
+}
+header a {
+  font-family: "Overpass", sans-serif;
+}
+
+/* nav */
+.nav {
+  width: 40%;
+  display: flex;
+  gap: 3%;
+  /* background-color: cornflowerblue; */
+}
+/* 메뉴 */
+.menu {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8%;
+  /* background-color: antiquewhite; */
+}
+.menu a {
+  /* width: calc(100% / 3); */
+  text-align: center;
+}
+/* 햄버거 메뉴 */
+.hamburger {
+  display: none;
+}
+/* --------메인-------------------------------- */
+/* 메인 */
+main {
+  padding: 146px 0;
+}
+
+/* 소개영역 */
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.intro-text h2 {
+  font-style: 50px;
+  font-family: Inder;
+}
+.intro-text p {
+  margin-top: 30px;
+  font-family: Inder;
+  font-size: 20px;
+}
+.intro-text br {
+  display: none;
+}
+/* 필터영역 */
+.filter-btn {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 1% 1.4%;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #e6aaaa;
+}
+
+/* 리스트 */
+.card-list {
+  padding-top: 10%;
+}
+.card-list ul {
+  display: grid;
+  gap: 32px 24px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  /*그리드를 반복할거다 4개보이게할거고 최소0부터시작해서 1fr하겟다
+    */
+}
+.card-list > ul > li {
+  border-radius: 8px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.card-list > ul > li > img {
+  width: 100%;
+  display: block;
+}
+/* lu안에[img 랑 cardinfo] */
+
+.card-info {
+  padding: 5%;
+  /* padding-left: 5%; */
+}
+
+/* 나라 */
+.country {
+  color: #999;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.country img {
+  width: 24px;
+}
+.card-list h3 {
+  font-weight: 400;
+  font-family: Inder;
+  font-size: 18px;
+}
+
+.proce {
+  padding-top: 24px;
+  font-family: Inder;
+  font-size: 18px;
+}

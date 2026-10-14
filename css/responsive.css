@@ -1,0 +1,94 @@
+/* 반응형코드 */
+
+/* 1000 */
+@media (max-width: 1000px) {
+  /* list */
+  .card-list ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+/* 768 */
+@media (max-width: 768px) {
+  header {
+    height: 65px;
+  }
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    justify-content: flex-end;
+    /* gap: 2%; */
+  }
+  /* 메인 */
+  .intro {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .intro-text h2 {
+    font-size: 32px;
+  }
+  .intro-text p {
+    font-size: 16px;
+  }
+  /* list */
+  .card-list ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 480 */
+@media (max-width: 480px) {
+  .intro-text br {
+    display: block;
+  }
+  .country p {
+    font-size: 14px;
+  }
+
+  .card-list h3 {
+    font-size: 16px;
+  }
+  .proce {
+    font-size: 16px;
+  }
+  /* list */
+  .card-list ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 390 */
+@media (max-width: 390px) {
+  header {
+    height: 55px;
+  }
+  header h1 {
+    font-size: 22px;
+  }
+  .intro-text h2 {
+    font-size: 20px;
+  }
+
+  .intro-text p {
+    font-size: 15px;
+  }
+  .filter-btn {
+    gap: 7px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .filter-btn img {
+    width: 20px;
+  }
+  .filter-btn span {
+    display: none;
+  }
+  /* list */
+  .card-list ul {
+    grid-template-columns: 1fr;
+  }
+}
