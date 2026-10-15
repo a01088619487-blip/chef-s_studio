@@ -12,12 +12,42 @@
   header {
     height: 65px;
   }
+  .nav {
+    position: relative;
+    /*  menu기준은 풀리고
+    기준이 nav가 됨 */
+  }
   .menu {
     display: none;
+    /* background-color: rgb(252, 200, 234); */
+    position: absolute;
+    top: 44px;
+    right: 0;
+    gap: 20px;
+    padding: 20px 0;
+    flex-direction: column;
   }
+  .menu.show {
+    display: flex;
+  }
+  /* menu 를눌럿을때 메뉴창 보이게
+  하는 소스는 js_main.에 잇음 */
+
+
   .hamburger {
     display: block;
   }
+
+/* 햄버거를 창에 마우스 올리면 바꾸는 */
+.menu a:hover{
+  background-color: rgb(240, 187, 196);
+  color: #fff;
+  width: 100%;
+  padding: 10px 3px;
+  
+  
+}
+
   .nav {
     justify-content: flex-end;
     /* gap: 2%; */

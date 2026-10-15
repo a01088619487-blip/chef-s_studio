@@ -2,6 +2,7 @@
 /* 글꼴 */
 @import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(font.css);
 
 body {
   background-color: #eee;
@@ -12,7 +13,7 @@ body {
   width: 90%;
   max-width: 1280px;
   margin: auto;
-  background-color: rgb(156, 255, 178);
+  background-color: rgb(255, 225, 246);
 }
 /* 그리드레이아웃이랑 똑같당 */
 
@@ -37,10 +38,10 @@ header .inner {
 /* 상단 폰트 */
 header h1 {
   /* font-family: "Overpass", sans-serif; */
-  font-family: "Agbalumo", system-ui;
+  font-family: "OngleipKonkon";
 }
 header a {
-  font-family: "Overpass", sans-serif;
+  font-family: "OngleipKonkon", sans-serif;
 }
 
 /* nav */
@@ -80,15 +81,16 @@ main {
   align-items: flex-end;
 }
 .intro-text h2 {
-  font-style: 50px;
-  font-family: Inder;
+  font-size: 42px;
+  font-family: 'NexonMaplestory';
+  margin-bottom: 3%;
 }
-.intro-text p {
+.intro-text p{
   margin-top: 30px;
   font-family: Inder;
   font-size: 20px;
 }
-.intro-text br {
+.intro-text br{
   display: none;
 }
 /* 필터영역 */
@@ -109,9 +111,14 @@ main {
 .card-list ul {
   display: grid;
   gap: 32px 24px;
+  
   grid-template-columns: repeat(4, minmax(0, 1fr));
   /*그리드를 반복할거다 4개보이게할거고 최소0부터시작해서 1fr하겟다
     */
+  /* grid-template-columns: repeat(auto-fit , minmax(290px / 1fr));   */
+  /*[위에잇는게 편하겟네!?] 근데 현재 이걸 쓸려면... 
+  reset.css에가서 카드리스트쪽에 있는 그리드를 다 지워야함 */
+
 }
 .card-list > ul > li {
   border-radius: 8px;
