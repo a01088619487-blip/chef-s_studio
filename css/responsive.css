@@ -34,6 +34,7 @@
   하는 소스는 js_main.에 잇음 */
 
 
+
   .hamburger {
     display: block;
   }
@@ -44,9 +45,10 @@
   color: #fff;
   width: 100%;
   padding: 10px 3px;
-  
-  
+
 }
+
+
 
   .nav {
     justify-content: flex-end;
