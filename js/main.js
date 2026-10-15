@@ -15,3 +15,5 @@ window.addEventListener("resize", () => {
   // 'resize'사이즈를 변경할것
   menu.classList.remove("show");
 });
+
+

@@ -82,15 +82,15 @@ main {
 }
 .intro-text h2 {
   font-size: 42px;
-  font-family: 'NexonMaplestory';
+  font-family: "NexonMaplestory";
   margin-bottom: 3%;
 }
-.intro-text p{
+.intro-text p {
   margin-top: 30px;
   font-family: Inder;
   font-size: 20px;
 }
-.intro-text br{
+.intro-text br {
   display: none;
 }
 /* 필터영역 */
@@ -111,15 +111,16 @@ main {
 .card-list ul {
   display: grid;
   gap: 32px 24px;
-  
+
   grid-template-columns: repeat(4, minmax(0, 1fr));
   /*그리드를 반복할거다 4개보이게할거고 최소0부터시작해서 1fr하겟다
     */
   /* grid-template-columns: repeat(auto-fit , minmax(290px / 1fr));   */
   /*[위에잇는게 편하겟네!?] 근데 현재 이걸 쓸려면... 
   reset.css에가서 카드리스트쪽에 있는 그리드를 다 지워야함 */
-
 }
+
+
 .card-list > ul > li {
   border-radius: 8px;
   background-color: #fff;

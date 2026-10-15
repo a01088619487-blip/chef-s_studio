@@ -34,6 +34,16 @@
   하는 소스는 js_main.에 잇음 */
 
 
+/* list 4장만 보이게 해놈 */
+  .card-list > ul > li:nth-child(n + 5) {
+  display: none;
+}
+
+/*  swiper퍼로 이용해서 옆으로 넘기기*/
+
+
+
+
 
   .hamburger {
     display: block;
